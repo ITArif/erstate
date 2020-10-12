@@ -214,4 +214,8 @@ Route::middleware('auth')->group(function () {
     Route::post('/update/user/password','UserController@updatePassword')
     ->name('update.password');
 
+    //*********Report ***********/
+    Route::get('/trading/account','TradingAccountController@index');
+    Route::get('/profit_loss/account','ProfitAndLossAccountController@index');
+
 });
